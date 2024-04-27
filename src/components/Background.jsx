@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useStateContext } from '../context';
-import Clear from '../assets/images/clear.webp';
+import Clear from '../assets/images/Clear.jpg';
 import Cloudy from '../assets/images/Cloudy.webp';
 import Rainy from '../assets/images/rainy.avif';
 import Wind from '../assets/images/Wind.jpg';
@@ -12,7 +12,6 @@ import Sunny from '../assets/images/sunny.jpg';
 const Background = () => {
   const { weather } = useStateContext();
   const [images, setImages] = useState(Clear);
-
 
   useEffect(() => {
     if (weather.conditions) {

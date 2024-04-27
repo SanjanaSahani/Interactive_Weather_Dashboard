@@ -24,7 +24,7 @@ const MiniCard = ({ time, temp, iconString }) => {
         setIcon(sun)
       } else if (iconString.toLowerCase().includes('snow')) {
         setIcon(snow)
-      } else if (iconString.toLowerCase().includes('storm') || iconStringtoLowerCase().includes('thunder')) {
+      } else if (iconString.toLowerCase().includes('storm') || iconString.toLowerCase().includes('thunder')) {
         setIcon(storm)
       } else if (iconString.toLowerCase().includes('windy')) {
         setIcon(windy)

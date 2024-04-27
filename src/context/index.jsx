@@ -8,7 +8,7 @@ export const StateContextProvider = ({ children }) => {
     const [weather, setWeather] = useState({})
     const [values, setValues] = useState([])
     const [place, setPlace] = useState('Gorakhpur')
-    const [thislocation, setLocation] = useState('')
+    const [thislocation, setLocation] = useState('Gorakhpur')
 
 
     // fetching Api 
@@ -26,7 +26,9 @@ export const StateContextProvider = ({ children }) => {
             },
             headers: {
                 // 'X-RapidAPI-Key': import.meta.env.VITE_API_KEY, 
-                'X-RapidAPI-Key': '3f1a8a63a2mshbbf4332fcdb5939p146771jsnec77f59066da',
+                // 'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
+
+                'X-RapidAPI-Key': '66778a8077mshc473c8b8dece0d4p11ac88jsn695341b4990d',
                 'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
             }
         }
